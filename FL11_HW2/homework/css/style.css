@@ -12,6 +12,7 @@
         margin: 0;
         padding: 0;
     }
+
 	
     p {
 	text-align: center;
@@ -83,17 +84,12 @@
     section::before {
         content: '';
         position: absolute;
-        border: 22px solid transparent;
-        border-left: 22px solid lightskyblue;
-        border-top: 22px solid lightskyblue;
+	border-right: 40px solid transparent;
+	border-top: 40px solid lightskyblue;
     }
 
     .flex-2-col {
         display: flex;
-    }
-
-    .flex-item {
-        flex-direction: row;
     }
 
     .flex-2-col .padding-medium {
@@ -118,7 +114,7 @@
         color: black;
     }
 
-    .padding-medium ol li a.text:visited {
+    .padding-medium ol li a:visited {
         color: darkorange;
     }
 
@@ -127,18 +123,20 @@
         text-decoration: none;
         color: darkorange;
         border-left: 3px solid darkorange;
+        padding: 2px;
     }
 
     .text::after {
 	position: absolute;
         content: 'New';
+        font-variant: small-caps;
         font-size: 10px;
         font-weight: bold;
         color: red; 
     }
 	
     .box-work {
-	padding: 5px 10px;
+	padding: 8px 10px;
     }
 
     .box-work p {
@@ -165,7 +163,7 @@
         width: 30px;
         height: 30px;
         right: 2px;
-        top: 5px;
+        top: 2px;
         background-image: url('../img/email-icon.png');
         background-size: 30px;
         background-repeat: no-repeat;
@@ -173,6 +171,7 @@
 	
     .form-control:focus{
 	background-color: lightskyblue;
+	color: white;
     }
 
     #contact_message {
@@ -188,7 +187,7 @@
 	color: lightskyblue;
 	border: 2px solid lightskyblue;
 	border-radius: 0px;
-	}
+    }
 	
     .submit-btn:hover {
 	background-color: lightskyblue;
@@ -201,7 +200,7 @@
     }
 	
     .flex-item h2 + p {
-        font-style: italic;
+        font-style: oblique;
         text-indent: 25px;
         line-height: 30px;
     }
@@ -214,7 +213,7 @@
     .tm-banner-text {
 	animation-name: rotation;
         animation-duration: 4s;
-        animation-iteration-count: 100;
+        animation-iteration-count: 10;
     }
 
     @keyframes rotation {
