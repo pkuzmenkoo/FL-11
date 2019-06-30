@@ -136,7 +136,7 @@ header {
 	font-size: 50px;
 }
 
-nav {
+nav ol {
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
@@ -144,7 +144,7 @@ nav {
 	align-content: center;
 }
 
-nav li {
+nav ol li {
 	display: inline;
 	padding: 15px 100px;
 	background: #000000;
@@ -154,7 +154,7 @@ nav li {
 	margin: 1% auto;
 }
 
-nav li a{
+nav ol li a{
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -318,4 +318,71 @@ article {
 	color: #F0F0F0;
 	padding: 10px 10%;
 	border: none;
+}
+
+.footer-text {
+	margin: 1%;
+	text-align: left;
+}
+.container-email {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: center;
+	margin: 1%;
+
+}
+
+.email-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 3% 0;
+}
+.email-box p {
+	margin: 5px;
+	font-size: 30px;
+}
+
+.email-box input{
+	padding: 10px 5px;
+	margin: 5px;
+	border: 1px solid #000000;
+	color: #000000;
+}
+.email-box button {
+	padding: 10px 5px;
+	margin: 5px;
+	border: none;
+	background: #097774;
+	color: #ffffff;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.copy {
+	color: #9E9E9E;
+}
+
+.footer-nav ol {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.footer-nav ol li {
+	display: inline;
+	padding: 0 5% 0;
+}
+
+.footer-nav ol li a{
+	color: #000000;
+	text-decoration: none;
 }
