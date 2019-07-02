@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1395px;
+  font-family: roboto;
+  background: #0b192f;
+  color: #ffffff;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.post-1 {
+  background: #B71757;
+}
+.post-2 {
+  background: #0D7E71;
+}
+.post-3 {
+  background: #b1660e;
+}
+.post-4 {
+  background: #d12767;
+}
+.post-5 {
+  background: #2d95bb;
+}
+/*● The @media query breakpoints that are used in the example (desktop first) should be:
+○ max-width: 1400px (for the desktop) 
+○ max-width: 768px (for the tablet)
+○ max-width: 480px (for the phone screen)
+*/
+.burger {
+  display: none;
+}
+
+header {
+  background: #162b4d;
+  height: 10vh;
+}
+
+.logo {
+  font-size: 30px;
+  padding: 2%;
+  font-weight: lighter; 
+}
+
+.logo span {
+  color: #c52951;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  text-align: center;
+  padding: 15px;
+}
+
+nav ol {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  align-items: stretch;
+}
+
+nav ol li {
+  display: inline;
+  padding: 35px 20px;
+}
+
+nav ol li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav ol li:hover{
+  background: #283d5f;
+}
+
+.post:hover .img-post{
+  opacity: 0.6;
+}
+
+.post:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+main {
+  margin: 1% 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.article-section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 1.5% 0 0;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.post:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.text-box {
+  width: 50%;
+}
+
+.text-box-last {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.text-box-last p {
+  opacity: 0.7;
+  padding: 2% 0;
+}
+
+.text-box-last h2 {
+  font-size: 30px;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.text-box-1 {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.text-post {
+  padding: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text-post-last {
+  padding: 5%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text-post h2 {
+  font-size: 30px;
+}
+
+.text-post p {
+  font-size: 15px;
+  opacity: 0.7;
+  }
+
+.img-post {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.news-section {
+  width: 30%;
+}
+
+.date {
+  text-align: center;
+  padding: 2%;
+  opacity: 0.7;
+}
+
+.day {
+  font-size: 40px;
+}
+
+.news {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  color: #000000;
+  margin: 0 0 5% 0;
+}
+
+.text-news {
+  padding: 5%;
+  text-align: left;
+}
+
+.text-news p {
+  padding: 5% 0;
+  color: #637c9d;
+  font-size: 13px;
+}
+
+.text-news h2 {
+  padding: 5% 0;
+  font-weight: 500;
+}
+
+footer {
+  background: #162b4d;
+  padding: 40px 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px; 
+}
+footer p {
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    padding: 0;
+  }
+
+  .container-header {
+    height: 240px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .article-section {
+    width: 56%;
+  }
+
+  .news-section {
+    width: 42.4%;
+  }
+
+  .post {
+    flex-direction: column;
+    align-items: center;
+  }
+  .post:nth-child(2n) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-box {
+    flex-direction: column;
+  }
+
+  .text-box-last {
+    flex-direction: column;
+  }
+  
+  .text-box-1 {
+  text-align: left;
+  }
+
+  .date {
+    padding: 8%;
+  }
+
+  article .img-post,
+  article .text-box {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    flex-direction: column;
+  }
+  footer p {
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    flex-direction: column;
+  }
+  .article-section,
+  .news-section {
+    width: 100%;
+  }
+}
